@@ -22,8 +22,8 @@ int nCols = 4;
     matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
     assert(ms != NULL);
 for (int i = 0; i < nMatrices; i++) {
-assert(ms[i].nRows == nRows);
-assert(ms[i].nCols == nCols);
+    assert(ms[i].nRows == nRows);
+    assert(ms[i].nCols == nCols);
 // Дополнительные проверки, если необходимо
 for (int j = 0; j < nRows; j++) {
 for (int k = 0; k < nCols; k++) {
