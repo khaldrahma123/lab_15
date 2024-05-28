@@ -40,11 +40,11 @@ void test_freeMemMatrix() {
 matrix m = getMemMatrix(2, 3);
 // Освобождаем память для матрицы
 freeMemMatrix(&m);
-// Проверяем, что матрица была освобождена
-assert(m.values == NULL);
-assert(m.nRows == 0);
-assert(m.nCols == 0);
-}
+    // Проверяем, что матрица была освобождена
+    assert(m.values == NULL);
+    assert(m.nRows == 0);
+    assert(m.nCols == 0);
+    }
 void test_freeMemMatrices() {
 // Создаем массив матриц
 int nMatrices = 2;
