@@ -55,13 +55,13 @@ matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
 freeMemMatrices(ms, nMatrices);
 }
 10
-void test_inputOutputFunctions() {
-matrix m = getMemMatrix(2, 2);
-inputMatrix(&m);
-printf("Введенная матрица:\n");
-outputMatrix(m);
-freeMemMatrix(&m);
-}
+    void test_inputOutputFunctions() {
+    matrix m = getMemMatrix(2, 2);
+    inputMatrix(&m);
+    printf("Введенная матрица:\n");
+    outputMatrix(m);
+    freeMemMatrix(&m);
+    }
 void test_inputOutputArrayFunctions() {
 int nMatrices = 2;
 int nRows = 3;
