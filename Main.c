@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "libs/data_structures/matrix/matrix.h"
 #include <windows.h>
+
 void test_getMemMatrix1() {
 matrix m = getMemMatrix(2, 3);
 assert(m.nRows == 2);
