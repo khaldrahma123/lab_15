@@ -4,8 +4,8 @@
 #include <windows.h>
 
 void test_getMemMatrix1() {
-matrix m = getMemMatrix(2, 3);
-assert(m.nRows == 2);
+    matrix m = getMemMatrix(2, 3);
+    assert(m.nRows == 2);
 assert(m.nCols == 3);
 // Дополнительные проверки, если необходимо
 for (int i = 0; i < m.nRows; i++) {
@@ -19,8 +19,8 @@ void test_getMemArrayOfMatrices1() {
 int nMatrices = 2;
 int nRows = 3;
 int nCols = 4;
-matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
-assert(ms != NULL);
+    matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
+    assert(ms != NULL);
 for (int i = 0; i < nMatrices; i++) {
 assert(ms[i].nRows == nRows);
 assert(ms[i].nCols == nCols);
